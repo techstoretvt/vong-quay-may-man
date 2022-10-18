@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div id="app">
+            <div class="child"></div>
+            <div class="child-2"></div>
+
+            <div class="text-1"></div>
+            <div class="text-2"></div>
+            <div class="text-3"></div>
+            <div class="text-4"></div>
+            <div class="text-5"></div>
+            <div class="text-6"></div>
+            <div class="text-7"></div>
+            <div class="text-8"></div>
+
+        </div>
+
+        <div id="btn">QUAY</div>
+
+        <div class="list">
+            <details >
+                <summary>Danh sach người chơi</summary>
+                <p style="font-size:12px;margin-top:20px">Bấm để thay đổi</p>
+                <input id="input-1" type="text" value="Hào" size="30">
+                <input id="input-2" type="text" value="Thái" size="30">
+                <input id="input-3" type="text" value="Thoại" size="30">
+                <input id="input-4" type="text" value="Thịnh" size="30">
+                <input id="input-5" type="text" value="Nguyên" size="30">
+                <input id="input-6" type="text" value="Trâm" size="30">
+                <input id="input-7" type="text" value="Phi" size="30">
+                <input id="input-8" type="text" value="Khang" size="30">
+            </details>
+        </div>
+        <div class="kkkk">
+            <img src="https://hoatuyethouse.files.wordpress.com/2020/08/25f3bbffa2d54b67cef51f853551124a.gif" alt="">
+        </div>
+
+        <div class="user">
+            <p>Người được chọn</p>
+            <span class="name" id="NameUser"></span>
+        </div>
+
+        <div class="slider">
+            <marquee behavior="alternate" direction="left" style="background-image:url(https://img3.thuthuatphanmem.vn/uploads/2019/10/10/anh-background-dong-don-gian_032845592.gif)">
+                <div style="height: 180px;width: 400px; background-image: url(https://3.bp.blogspot.com/-iw8-q9rHpWk/Uia7AGGmS0I/AAAAAAAAAV8/PYDUN-wTvtY/s1600/tumblr_mpvsq07Epg1rjxfbno1_500.gif);"></div>
+            </marquee>
+        </div>
+
+    </div>
+    <script>
+        var btnElement = document.getElementById('btn');
+        var appElement = document.getElementById('app');
+        var nameUser = document.getElementById('NameUser');
+        var input1= document.getElementById('input-1');
+        var input2= document.getElementById('input-2');
+        var input3= document.getElementById('input-3');
+        var input4= document.getElementById('input-4');
+        var input5= document.getElementById('input-5');
+        var input6= document.getElementById('input-6');
+        var input7= document.getElementById('input-7');
+        var input8= document.getElementById('input-8');
+        var tam;
+        // quay
+        btnElement.onclick = function() {
+            //random
+            var random = Math.floor(Math.random() * 8);
+            while( random == tam) {
+                random = Math.floor(Math.random() * 8);
+            }
+            tam = random;
+            switch(random) {
+                case 0:
+                    {
+                        appElement.style.animation = 'xoay1 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText = input1.value;
+                        },3200)
+                        break;
+                    }
+                case 1:
+                    {
+                        appElement.style.animation = 'xoay2 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input7.value;
+                        },3200)
+                        break;
+                    }
+                case 2:
+                    {
+                        appElement.style.animation = 'xoay3 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input8.value;
+                        },3200)
+                        break;
+                    }
+                case 3:
+                    {
+                        appElement.style.animation = 'xoay4 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input6.value;
+                        },3200)
+                        break;
+                    }
+                case 4:
+                    {
+                        appElement.style.animation = 'xoay5 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input4.value;
+                        },3200)
+                        break;
+                    }
+                case 5:
+                    {
+                        appElement.style.animation = 'xoay6 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input2.value;
+                        },3200)
+                        break;
+                    }
+                case 6:
+                    {
+                        appElement.style.animation = 'xoay7 3s ease-out forwards';
+                        setTimeout(function() {
+                            nameUser.innerText =input5.value;
+                        },3200)
+                        break;
+                    }
+                 case 7:
+                     {
+                         appElement.style.animation = 'xoay8 3s ease-out forwards';
+                         setTimeout(function() {
+                            nameUser.innerText =input3.value;
+                        },3200)
+                         break;
+                     }
+                       
+            }
+            
+            
+            
+
+        }
+
+        // đổi tên
+        function Rename() {
+            
+            var text1= document.querySelector('.text-1');
+            text1.innerHTML = input1.value;
+            input1.oninput = function() {
+                text1.innerHTML = input1.value;
+            }
+    
+            
+            var text2= document.querySelector('.text-2');
+            text2.innerHTML = input2.value;
+            input2.oninput = function() {
+                text2.innerHTML = input2.value;
+            }
+    
+            
+            var text3= document.querySelector('.text-3');
+            text3.innerHTML = input3.value;
+            input3.oninput = function() {
+                text3.innerHTML = input3.value;
+            }
+    
+            
+            var text4= document.querySelector('.text-4');
+            text4.innerHTML = input4.value;
+            input4.oninput = function() {
+                text4.innerHTML = input4.value;
+            }
+    
+            
+            var text5= document.querySelector('.text-5');
+            text5.innerHTML = input5.value;
+            input5.oninput = function() {
+                text5.innerHTML = input5.value;
+            }
+    
+            
+            var text6= document.querySelector('.text-6');
+            text6.innerHTML = input6.value;
+            input6.oninput = function() {
+                text6.innerHTML = input6.value;
+            }
+    
+            
+            var text7= document.querySelector('.text-7');
+            text7.innerHTML = input7.value;
+            input7.oninput = function() {
+                text7.innerHTML = input7.value;
+            }
+    
+            
+            var text8= document.querySelector('.text-8');
+            text8.innerHTML = input8.value;
+            input8.oninput = function() {
+                text8.innerHTML = input8.value;
+            }
+        }
+        Rename();
+
+
+       
+
+    </script>
+</body>
+</html>

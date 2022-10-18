@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://thumbs.gfycat.com/FeminineKeyGraysquirrel-size_restricted.gif);
+    overflow: hidden;
+    background-color: #ccc;
+}
+#app {
+    position: relative;
+    top: 70px;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+    /* transform: rotate(3422deg); */
+}
+/* hao */
+@keyframes xoay1 {
+    to {
+        transform: rotate(3620deg);
+    }
+}
+/* Phi */
+@keyframes xoay2 {
+    to {
+        transform: rotate(3396deg);
+    }
+}
+/* khang */
+@keyframes xoay3 {
+    to {
+        transform: rotate(3441deg);
+    }
+}
+/* trâm */
+@keyframes xoay4 {
+    to {
+        transform: rotate(3483deg);
+    }
+}
+/* Thịnh */
+@keyframes xoay5 {
+    to {
+        transform: rotate(3534deg);
+    }
+}
+/* Thái */
+@keyframes xoay6 {
+    to {
+        transform: rotate(3573deg);
+    }
+}
+/* Nguyên */
+@keyframes xoay7 {
+    to {
+        transform: rotate(3714deg);
+    }
+}
+/* Thoại */
+@keyframes xoay8 {
+    to {
+        transform: rotate(3666deg);
+    }
+}
+
+.child {
+    position: absolute;
+    width:10px;
+    height:10px;
+    margin: auto;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.child-2 {
+    position: absolute;
+    width:10px;
+    height:10px;
+    margin: auto;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.child::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height :1px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)  rotate(45deg);
+}
+.child::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height :300px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.child-2::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height :1px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.child-2::before {
+    position: absolute;
+    content: "";
+    width: 1.5px;
+    height :300px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+/* text */
+.text-1 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 10%;
+    left: calc(20% + 16px);
+    transform: rotate(-22deg);
+    line-height:24px;
+    height:70px;
+    width: 80px;
+    text-align: center;
+}
+.text-2 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 10%;
+    left: calc(45% + 15px);
+    transform: rotate(28deg);
+    line-height:24px;
+    height:70px;
+    width: 80px;
+    text-align: center;
+}
+.text-3 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 26%;
+    left: calc(-5% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(-65deg);
+}
+.text-4 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 26%;
+    left: calc(54% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(65deg);
+}
+.text-5 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 52%;
+    left: calc(-5% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(-114deg);
+}
+.text-6 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 52%;
+    left: calc(55% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(118deg);
+}
+.text-7 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 68%;
+    left: calc(12% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(204deg);
+}
+.text-8 {
+    position: absolute;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    top: 68%;
+    left: calc(36% + 36px);
+    height: 70px;
+    width: 80px;
+    line-height:24px;
+    text-align: center;
+    transform: rotate(159deg);
+}
+
+#btn {
+    width:100px;
+    margin: 76px auto 0;
+    background-color: red;
+    text-align: center;
+    padding: 6px;
+    border-radius: 6px;color: white;
+    cursor: pointer;
+    user-select: none;
+}
+.icon  {
+    position: absolute;
+    font-size:30px;
+    top: 46px;
+    width:24px;
+    padding-top: 10px;
+    left: calc(50% + 2.5px);
+    transform: translateX(-50%);
+    z-index: 1;
+    color: black;
+}
+.list {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-size:24px;
+    color: white;
+    border: 1px solid black;
+    padding:6px;
+    cursor: pointer;
+    user-select: none;
+    background-color:deeppink;
+    border-radius: 3px;
+    z-index: 1;
+}
+.list details {
+    display: flex;
+}
+.list input {
+    padding: 6px 4px;
+    margin: 6px 0;
+}
+
+.user {
+    position: absolute;
+    padding: 12px;
+    top: 50px;
+    right: 140px;
+    background-image: url(https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-background-dong-trai-tim.gif);
+    text-align: center;
+    border-radius:4px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6)
+}
+.user p {
+    color:red;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    animation: mau 2s linear infinite;
+}
+@keyframes mau {
+    from {
+        color:white;
+    }
+    50% {
+        color:#ccc;
+    }
+    to {
+        color:yellow;
+    }
+}
+.user span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border: 2px solid red;
+    background-color:white;
+    background-image: url(https://thumbs.gfycat.com/TestyWarlikeIndianskimmer-size_restricted.gif);
+    animation: mauborder 0.2s linear infinite alternate;
+    font-size: 18px;
+}
+@keyframes mauborder {
+    from {
+        border-top:4px solid yellow;
+        border-right:4px solid aqua;
+        border-bottom:4px solid rgb(152, 69, 207);
+        border-left:4px solid rgb(212, 88, 15);
+        font-size: 24px;
+        color: aquamarine;
+    }
+    to {
+        border-top:4px solid green;
+        border-right:4px solid rgb(87, 37, 206);
+        border-bottom:4px solid rgb(196, 24, 144);
+        border-left:4px solid rgb(17, 219, 219);
+        font-size: 28px;
+        color: deeppink;
+    }
+}
+.slider {
+    position: absolute;
+    width:100%;
+    height:180px;
+    background-color:white;
+    top: calc(100% - 180px);
+    
+}
+
+.kkkk {
+    position: absolute;
+    width: 236px;
+    height: 200px;
+    top: 100px;
+    left: 20px;
+    object-fit: contain;
+}
+.kkkk img {
+    width: 100%;
+}
+@media (max-width:990px) {
+    .kkkk,
+    .user {
+        display: none;
+    }
+    
+}
